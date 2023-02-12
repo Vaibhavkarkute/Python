@@ -6,7 +6,7 @@ def gameWin(comp, you):
     if comp == you:
         return None
 
-    # Check for all possibilities when computer chose s
+
     elif comp == 's':
         if you=='w':
             return False
@@ -37,13 +37,13 @@ elif randNo == 3:
     comp = 'g'
 
 you = input("Your Turn: Snake(s) Water(w) or Gun(g)?")
-a = gameWin(comp, you)
+a = gameWin(comp,you)
 
 print(f"Computer chose {comp}")
 print(f"You chose {you}")
 
 if a == None:
-    print("The game is a tie!")
+    print("The game is a tie!") 
 elif a:
     print("You Win!")
 else:
